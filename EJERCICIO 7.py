@@ -4,4 +4,4 @@ min=0
 
 minutos = int(input("Dime los minutos: "))
 
-print(f"Horas: {int(minutos/60)} y {minutos%60} minutos")
+print(f"Horas: {int(minutos/60)} Minutos: {minutos%60}")

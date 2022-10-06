@@ -10,7 +10,7 @@ venta1=int(input("Dime cuanto ganaste con tu primera venta: "))
 venta2=int(input("Dime cuanto ganaste con tu segunda venta: "))
 venta3=int(input("Dime cuanto ganaste con tu tercera venta: "))
 
-print("Tu dinero obtenido de las tres ventas es: ",(venta1+venta2+venta3)*1,1,"€")
+print("Tu dinero obtenido de las tres ventas es: ",(venta1+venta2+venta3)*1.1,"€")
 
-#print("El dinero total obtenido de todo es: ", ((venta1+venta2+venta3)*1,1)+sueldo ," €")
-print(f"El dinero total obtenido de todo es: {((venta1+venta2+venta3)*1,1)+sueldo } €")
+#print("El dinero total obtenido de todo es: ", ((venta1+venta2+venta3)*1.1)+sueldo ," €")
+print(f"El dinero total obtenido de todo es: {((venta1+venta2+venta3)*1.1)+sueldo } €")
