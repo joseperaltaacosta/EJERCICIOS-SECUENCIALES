@@ -2,17 +2,31 @@ def ejercicio1(nombre:str):
     print("Ejercicio 1:")
     print ("Buenos días", nombre)
 ejercicio1("Jose")
-def ejercicio2(base:int,altura:int):
+def ejercicio2A(base:int,altura:int):
+    perimetro=(2*base)+(2*altura)
+    return perimetro
+def ejercicio2B(base:int,altura:int):
+    area=base*altura
+    return area
+def ejercicio2C(base:int,altura:int):
     print("Ejercicio 2:")
-    print ("El perímetro del rectángulo es:", (2*base)+(2*altura))
-    print ("El area del rectángulo es:", base*altura)
-ejercicio2(5,8)
+    vlista=[]
+    area=ejercicio2A(base, altura)
+    vlista.append(area)
+    perimetro=ejercicio2B(base, altura)
+    vlista.append(perimetro)
+    return vlista
+base=int(input("Dime la base:"))
+altura=int(input("Dime la altura:"))
+vNum=ejercicio2C(base,altura)
+print("El area es:", vNum[0])
+print("El perimetro es:", vNum[1])
 def ejercicio3(CATETO1:int,CATETO2:int):
     print("Ejercicio 3:")
     import math
     HIPOTE = math.sqrt((CATETO1*CATETO1)+(CATETO2*CATETO2))
-    print("La hipotenusa del triángulo rectángulo es:", HIPOTE)
-ejercicio3(3,4)
+    return HIPOTE
+print("La hipotenusa del triángulo rectángulo es:", ejercicio3(3,4))
 def ejercicio4(NUM1:int,NUM2:int):
     print("Ejercicio 4:")
     print("La suma de los dos números es:",NUM1+NUM2 )
